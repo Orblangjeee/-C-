@@ -1,6 +1,10 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
+//배열 반복 입력
+//입력된 정수 중 최댓값
+//입력된 정수의 총 합
+
 int main(void)
 {
 	int arr[5];
