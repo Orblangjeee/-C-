@@ -1,27 +1,26 @@
 #define _CRT_SECURE_NO_WARNINGS
-#include <stdio.h>
+#include <iostream>
 
-//배열 반복 입력
-//입력된 정수 중 최댓값
-//입력된 정수의 총 합
 
-int main(void)
+int main()
 {
 	int arr[5];
-	int max = 0; 
-	int min = 0;
-	int	sum = 0 ;
+	int max = 0, min = 0, sum = 0;
+
 	for (int i = 0; i < 5; i++) {
 		scanf("%d", &arr[i]);
-		if (max < arr[i]) {
+	}
+
+	for (int i = 0; i < 5; i++) {
+		if (i ==0 || arr[i] > max) {
 			max = arr[i];
 		}
-		if (i == 0 || min > arr[i]) {
+		if (i == 0 || arr[i] < min) {
 			min = arr[i];
 		}
-		
 		sum += arr[i];
 	}
-		printf("최댓값 : %d 최솟값 : %d 합 : %d", max, min, sum);
 	
+	printf("최댓값 : %d 최솟값: %d 총합 : %d", max, min, sum);
+
 }
