@@ -12,7 +12,7 @@ int main(void)
 	str1[strlen(str1)-1] = 0;
 
 	fgets(str2, sizeof(str2), stdin);
-	str2[strlen(str1)-1] = 0;
+	str2[strlen(str2)-1] = 0;
 
 	strncpy(str3, str1, strlen(str1)+1);
 	strncat(str3, str2, strlen(str2)+1);
